@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "npm run astro -- dev",
     "build": "npm run astro -- check && npm run astro -- build && pagefind --site dist && cp -r dist/pagefind public/",
+    "deploy:server": "bash ./scripts/deploy-server.sh",
     "preview": "npm run astro -- preview",
     "sync": "npm run astro -- sync",
     "astro": "node ./scripts/astro-with-google-font-proxy.mjs",
